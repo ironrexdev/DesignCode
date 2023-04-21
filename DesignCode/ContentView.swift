@@ -16,7 +16,16 @@ struct ContentView: View {
         ZStack {
             TitleView()
                 .blur(radius: show ? 20 : 0)
-                .animation(.default, value: show)
+                .opacity(showCard ? 0.4 : 1)
+                .offset(y: showCard ? -200 : 0)
+                .animation(
+                    Animation
+                        .default
+                        .delay(0.1),
+   ///                     .speed(2)
+   ///                     .repeatForever(autoreverses: true),
+                    value: showCard
+                )
             
             BackCardView()
                 .background(show ? Color("card3") : Color("card4"))
