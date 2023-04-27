@@ -13,16 +13,38 @@ struct MenuView: View {
             Spacer()
             
             VStack(spacing: 16) {
+                Text("Meng - 28% complete")
+                    .font(.caption)
+                
+                Color.white
+                    .frame(width: 38, height: 6)
+                    .cornerRadius(3)
+                    .frame(width: 130, height: 6, alignment: .leading)
+                    .background(Color(.black).opacity(0.08))
+                    .padding()
+                    .frame(width: 150, height: 24)
+                    .background(.black.opacity(0.1))
+                    .cornerRadius(12)
+                
                 MenuRow(title: "Account", icon: "gear")
                 MenuRow(title: "Billing", icon: "creditcard")
                 MenuRow(title: "Sign out", icon: "person.crop.circle")
             }
             .frame(maxWidth: .infinity)
             .frame(height: 300)
-            .background(Color.white)
+            .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 1, green: 0.9999999404, blue: 0.9999999404, alpha: 1)), Color(#colorLiteral(red: 0.8705882353, green: 0.8941176471, blue: 0.9450980392, alpha: 1))]), startPoint: .top, endPoint: .bottom))
             .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-            .shadow(radius: 30)
-        .padding(.horizontal, 30)
+            .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
+            .padding(.horizontal, 30)
+            .overlay(
+                Image("Avatar")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 60, height: 60)
+                    .clipShape(Circle())
+                    .offset(y: -150)
+                    
+            )
         }
         .padding(.bottom, 30)
     }
@@ -44,6 +66,7 @@ struct MenuRow: View {
                 .font(.system(size: 20, weight: .light))
                 .imageScale(.large)
                 .frame(width: 32, height: 32)
+                .foregroundColor(Color(.init(red: 255, green: 255, blue: 255, alpha: 1.0)))
             
             Text(title)
                 .font(.system(size: 20, weight: .bold, design: .default))
