@@ -11,6 +11,7 @@
 		840A9CF029ED2047001787B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A9CEF29ED2047001787B9 /* ContentView.swift */; };
 		840A9CF229ED204A001787B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840A9CF129ED204A001787B9 /* Assets.xcassets */; };
 		840A9CF529ED204A001787B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840A9CF429ED204A001787B9 /* Preview Assets.xcassets */; };
+		843019E229FB9FE400B96634 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843019E129FB9FE400B96634 /* Home.swift */; };
 		84D2B17B29F7BF8B000EC12B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2B17A29F7BF8B000EC12B /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +21,7 @@
 		840A9CEF29ED2047001787B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		840A9CF129ED204A001787B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840A9CF429ED204A001787B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		843019E129FB9FE400B96634 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		84D2B17A29F7BF8B000EC12B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +57,7 @@
 			children = (
 				840A9CED29ED2047001787B9 /* DesignCodeApp.swift */,
 				840A9CEF29ED2047001787B9 /* ContentView.swift */,
+				843019E129FB9FE400B96634 /* Home.swift */,
 				84D2B17A29F7BF8B000EC12B /* MenuView.swift */,
 				840A9CF129ED204A001787B9 /* Assets.xcassets */,
 				840A9CF329ED204A001787B9 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				840A9CF029ED2047001787B9 /* ContentView.swift in Sources */,
 				84D2B17B29F7BF8B000EC12B /* MenuView.swift in Sources */,
+				843019E229FB9FE400B96634 /* Home.swift in Sources */,
 				840A9CEE29ED2047001787B9 /* DesignCodeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
