@@ -58,10 +58,10 @@ struct SectionView: View {
                 Image(section.logo)
             }
             
-            Text("18 Section".uppercased())
+            Text(section.text.uppercased())
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            Image("Card1")
+            section.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 210)
@@ -86,6 +86,6 @@ struct Section: Identifiable {
 
 let sectionData = [
     Section(title: "Prototype designs in SwiftUI", text: "18 Sections", logo: "Logo1", image: Image("Card1"), color: Color("card1")),
-    Section(title: "Prototype designs in SwiftUI", text: "18 Sections", logo: "Logo1", image: Image("Background1"), color: Color("card5")),
+    Section(title: "Build a SwiftUI app", text: "20 Sections", logo: "Logo1", image: Image("Card2"), color: Color("card2")),
     Section(title: "SwiftUI Advanced", text: "20 Sections", logo: "Logo1", image: Image("Card4"), color: Color("card3"))
     ]
